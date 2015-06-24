@@ -1,0 +1,8 @@
+c:\users\mariusz\documents\visual studio 2013\Projects\Cluster\Cluster\bin\Debug\Cluster.exe.config
+c:\users\mariusz\documents\visual studio 2013\Projects\Cluster\Cluster\obj\Debug\Cluster.csprojResolveAssemblyReference.cache
+c:\users\mariusz\documents\visual studio 2013\Projects\Cluster\Cluster\obj\Debug\Cluster.Properties.Resources.resources
+c:\users\mariusz\documents\visual studio 2013\Projects\Cluster\Cluster\obj\Debug\Cluster.csproj.GenerateResource.Cache
+c:\users\mariusz\documents\visual studio 2013\Projects\Cluster\Cluster\bin\Debug\Cluster.exe
+c:\users\mariusz\documents\visual studio 2013\Projects\Cluster\Cluster\bin\Debug\Cluster.pdb
+c:\users\mariusz\documents\visual studio 2013\Projects\Cluster\Cluster\obj\Debug\Cluster.exe
+c:\users\mariusz\documents\visual studio 2013\Projects\Cluster\Cluster\obj\Debug\Cluster.pdb
