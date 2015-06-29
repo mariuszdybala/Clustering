@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AForge;
+using AForge.Math.Geometry;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace Cluster
 {
@@ -22,15 +25,81 @@ namespace Cluster
             new CoordinateBase(){ Latitude = 50.3587496, Longitude = 20.0274582}, //Miechów
             new CoordinateBase(){ Latitude = 50.2857166, Longitude = 19.5617801}}; //Olkusz
 
+        List<Employee> listEmployee = new List<Employee>(){
+            new Employee(){ID = 101, Name = "Mark"},
+            new Employee(){ID = 102, Name = "John"},
+            new Employee(){ID = 103, Name = "Mary"}
+        };
+
         List<CoordinateBase> Clusters;
 
 
         public Form1()
         {
             InitializeComponent();
-            //GetCenterPoint();
-            DrawArea();
+
+            //Predicate<Employee> employeePredicate = new Predicate<Employee>(FindEmployee);
+            //Employee employee =  listEmployee.Find(emp=> FindEmployee(emp));
+            //Metoda anionimowa bez koniecności tworzenia ciała klasy
+            Employee employee = listEmployee.Find(delegate(Employee emp) { return emp.ID == 102; });
+            // Bez wykorzystania metody anionimowej
+          //  button1.Click += new EventHandler(ButtonClick);
+            // Z wykorzystaniem metod anonimowych  !!!!!!!!!
+          //  button1.Click += new EventHandler(delegate(object o, EventArgs a) { MessageBox.Show("Button has clicked"); });
+            // Z wykorzystaniem Lambda expression
+            button1.Click += (x, y) => { MessageBox.Show("Button has clicked"); };
+            SetSizeCoordinate();
         }
+
+        private void ButtonClick(object sender, EventArgs e)
+        {
+            MessageBox.Show("Button has clicked");
+        }
+
+
+        public static bool FindEmployee(Employee emp)
+        {
+
+            return emp.ID == 102;
+
+        }
+
+        private void SetSizeCoordinate()
+        {
+            int MaxPotencial = Miasta.Max(x=>x.Potencial);
+            int MinPotencial = Miasta.Min(x => x.Potencial);
+            int Range;
+            int Interval;
+
+            Range = MaxPotencial - MinPotencial;
+            Interval = Range / 4;
+            int[] Ranges = new int[5];
+
+            for (int i = 0; i < Ranges.Length; i++)
+            {
+                Ranges[i] = MinPotencial + Interval * i;
+            }
+
+        foreach (var miasto in Miasta)
+        {
+
+            if (miasto.Potencial >= Ranges[0] && miasto.Potencial < Ranges[1])
+                miasto.Size = 1;
+            else if (miasto.Potencial >= Ranges[1] && miasto.Potencial < Ranges[2])
+                miasto.Size = 2;
+            else if (miasto.Potencial >= Ranges[2] && miasto.Potencial < Ranges[3])
+                miasto.Size = 3;
+            else if (miasto.Potencial >= Ranges[3] && miasto.Potencial < Ranges[4])
+                miasto.Size = 4;
+            else if (miasto.Potencial >= Ranges[4])
+                miasto.Size = 5;
+        }
+        
+        
+        }
+
+
+
 
         private void DrawArea()
         {

@@ -6,3 +6,12 @@ c:\users\mariusz\documents\visual studio 2013\Projects\Cluster\Cluster\bin\Debug
 c:\users\mariusz\documents\visual studio 2013\Projects\Cluster\Cluster\bin\Debug\Cluster.pdb
 c:\users\mariusz\documents\visual studio 2013\Projects\Cluster\Cluster\obj\Debug\Cluster.exe
 c:\users\mariusz\documents\visual studio 2013\Projects\Cluster\Cluster\obj\Debug\Cluster.pdb
+C:\Users\Mariusz\Documents\GitHub\Clustering\Cluster\Cluster\bin\Debug\Cluster.exe.config
+C:\Users\Mariusz\Documents\GitHub\Clustering\Cluster\Cluster\obj\Debug\Cluster.exe
+C:\Users\Mariusz\Documents\GitHub\Clustering\Cluster\Cluster\obj\Debug\Cluster.pdb
+C:\Users\Mariusz\Documents\GitHub\Clustering\Cluster\Cluster\bin\Debug\Cluster.exe
+C:\Users\Mariusz\Documents\GitHub\Clustering\Cluster\Cluster\bin\Debug\Cluster.pdb
+C:\Users\Mariusz\Documents\GitHub\Clustering\Cluster\Cluster\obj\Debug\Cluster.csprojResolveAssemblyReference.cache
+C:\Users\Mariusz\Documents\GitHub\Clustering\Cluster\Cluster\obj\Debug\Cluster.Properties.Resources.resources
+C:\Users\Mariusz\Documents\GitHub\Clustering\Cluster\Cluster\obj\Debug\Cluster.csproj.GenerateResource.Cache
+C:\Users\Mariusz\Documents\GitHub\Clustering\Cluster\Cluster\obj\Debug\Cluster.Form1.resources
